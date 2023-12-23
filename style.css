@@ -1,10 +1,12 @@
 body {
     /* background: url(background.png); */
     background-image: url("images/back.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color: white;
+    position: relative;
+    overflow: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -600,4 +602,42 @@ button:hover {
 #movies, #anime, #games, #learning, #fashion, #tech
 {
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px)
+{
+    #webname{
+        margin-right: 170px;
+    }
+    #upperbar {
+        flex-wrap: nowrap;
+    
+    }
+    #AccessAlly {
+        font-size: 70px;
+        
+    }
+    #moto{
+        display: none;
+    }
+    #rightmiddle{display: none;}
+    #middlepart {
+        top: 350px;
+        margin-left: 0px;
+        margin-right: 400px;
+    }
+    /* #leftmiddle{border: 2px solid white;} */
+    #slogon1 {
+        width: 550px;
+        padding: 30px;
+        margin-left: 10px;
+    }
+    #slogon2 {
+        /* border: 3px solid green; */
+        font-size: 70px;
+        margin-top: 40px;
+        padding: 10px;
+
+    }
+
 }
