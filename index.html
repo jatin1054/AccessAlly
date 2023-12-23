@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <div id="upperbar">
+            <div id="webname">
+                <span id="AccessAlly" onclick="homePage()">ACCESS ALLY</span>
+                <span id="domain">.com</span>
+            </div>
+
+            <div id="moto">
+                <span class="sat">Simplify</span>
+                <span class="sat">Acess</span>
+                <span class="sat">Thrive</span>
+            </div>
+
+            <div id="contact">
+                <ul class="forbtns">
+                    <li>
+                        <a href="#" class="button" onclick="contactUs()">Contact</a>
+                    </li>
+                    <li> <a href="#" class="button" id="login1" onclick="loginpage()">login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="middlepart">
+            <div id="leftmiddle">
+                <div id="slogon1"><a href="#" id="homePageAcess" onclick="InsidehomePage()">Access Ally</a></div>
+                <div id="slogon2">
+                    <span class="slogon1">Discover the ultimate selection of unparalleled websites tailored
+                        to your precise needs and preferences.</span>
+                    </span>
+                </div>
+            </div>
+            <div id="rightmiddle">
+                <img src="images/front.jpg" id="front">
+            </div>
+        </div>
+    </header>
+
+    <section id="loginSection" class="container">
+        <div class="main" id="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                <form>
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="txt" placeholder="User name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button onclick="logindone()">Sign up</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form>
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button onclick="logindone()">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="portfolio">
+        
+        <div class="portfolios">
+            <div class="portfolio-item forMargin">
+                <div class="image">
+                    <img src="images/movies.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 id="movies" onclick="topicDetails()">MOVIES</h3>
+                </div>
+            </div>
+            <div class="portfolio-item forMargin">
+                <div class="image">
+                    <img src="images/anime.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 id="anime" onclick="topicDetails()">ANIME</h3>
+                </div>
+            </div>
+            <div class="portfolio-item forMargin">
+                <div class="image">
+                    <img src="images/games.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 id="games" onclick="topicDetails()">GAMES</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="images/learning.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 id="learning" onclick="topicDetails()">LEARNING</h3>
+                    
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="images/fashion.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 id="fashion" onclick="topicDetails()">FASHION</h3>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="images/tech.jpg" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3 id="tech" onclick="topicDetails()">TECHNOLOGY</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactPage">
+        <div id="background" >
+            <div class="contain">
+              <div class="screen">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span>CONTACT</span>
+                      <span>US</span>
+                    </div>
+                    <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="NAME">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="EMAIL">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="CONTACT NO">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="MESSAGE">
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">SEND</button>
+                        <button class="app-form-button">CANCEL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
