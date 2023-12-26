@@ -673,5 +673,13 @@ input {
         padding: 60px;
         backdrop-filter: blur(10px);
     }
+     #slogon1 {
+        font-size: 70px;
+        width: 450px;
+        padding: 30px;
+        margin-left: 10px;
+        justify-content: center;
+
+    }
 
 }
