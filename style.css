@@ -117,6 +117,9 @@ li {
 
 #leftmiddle {
     /* border: 3px solid pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 60px;
     backdrop-filter: blur(10px);
 }
@@ -125,7 +128,10 @@ li {
     text-decoration: none;
     color: white;
 }
-#homePageAcess:hover{color: #fdf4dc;}
+
+#homePageAcess:hover {
+    color: #fdf4dc;
+}
 
 #slogon1 {
     border: 10px solid white;
@@ -144,7 +150,7 @@ li {
 @keyframes button1 {
     0% {
         /* border: 10px solid white; */
-        color:white;
+        color: white;
     }
 
     /* 50% {
@@ -303,7 +309,7 @@ button:hover {
 .portfolios .portfolio-item {
     position: relative;
     border-radius: 15px;
-    
+
 }
 
 .forMargin {
@@ -391,7 +397,8 @@ button:hover {
 
 
 
-.baclground button, input {
+.baclground button,
+input {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -507,7 +514,7 @@ button:hover {
     bottom: -10px;
     width: 30px;
     height: 3px;
-    
+
 }
 
 .app-contact {
@@ -561,7 +568,7 @@ button:hover {
 
 .app-form-button:hover {
     color: #dfd9e2;
-    
+
 }
 
 
@@ -588,7 +595,7 @@ button:hover {
     }
 }
 
-@media screen and (width <= 2800px) {
+@media screen and (width <=2800px) {
     .screen-body {
         padding: 40px;
     }
@@ -598,32 +605,45 @@ button:hover {
     }
 }
 
-#movies, #anime, #games, #learning, #fashion, #tech
-{
+#movies,
+#anime,
+#games,
+#learning,
+#fashion,
+#tech {
     cursor: pointer;
 }
 
-@media screen and (width <= 2800px)
-{
-    
+@media screen and (width <=2800px) {
+
     #upperbar {
         display: flex;
         justify-content: space-between;
         margin: 40px;
     }
-    #moto{display:none;}
-   
+
+    #moto {
+        display: none;
+    }
+
     #middlepart {
         top: 50px;
         margin-left: 0px;
         margin-right: 400px;
+        justify-items: center;
+
     }
+
     /* #leftmiddle{border: 2px solid white;} */
     #slogon1 {
-        width: 550px;
+        font-size: 70px;
+        width: 450px;
         padding: 30px;
         margin-left: 10px;
+        justify-content: center;
+
     }
+
     #slogon2 {
         /* border: 3px solid green; */
         font-size: 70px;
@@ -633,7 +653,25 @@ button:hover {
     }
 
 }
-@media screen and (width <= 1650px)
-{
-    #rightmiddle{display: none;}
+
+@media screen and (width <=1650px) {
+    #rightmiddle {
+        display: none;
+    }
+
+    #middlepart {
+        border: 2px solid white;
+        margin-left: 40px;
+        margin-right: 40px;
+        
+    }
+    #leftmiddle {
+        /* border: 3px solid pink; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 60px;
+        backdrop-filter: blur(10px);
+    }
+
 }
