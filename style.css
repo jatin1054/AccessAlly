@@ -28,7 +28,6 @@ body {
 
 #upperbar {
     display: flex;
-    position: fixed;
     /* border: 2px solid white; */
     margin: 40px;
 }
@@ -111,7 +110,7 @@ li {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 350px;
+    top: 50px;
     margin-left: 400px;
     margin-right: 400px;
 }
@@ -589,7 +588,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (width <= 2800px) {
     .screen-body {
         padding: 40px;
     }
@@ -604,25 +603,18 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 500px)
+@media screen and (width <= 2800px)
 {
-    #webname{
-        margin-right: 170px;
-    }
-    #upperbar {
-        flex-wrap: nowrap;
     
+    #upperbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px;
     }
-    #AccessAlly {
-        font-size: 70px;
-        
-    }
-    #moto{
-        display: none;
-    }
-    #rightmiddle{display: none;}
+    #moto{display:none;}
+   
     #middlepart {
-        top: 350px;
+        top: 50px;
         margin-left: 0px;
         margin-right: 400px;
     }
@@ -640,4 +632,8 @@ button:hover {
 
     }
 
+}
+@media screen and (width <= 1650px)
+{
+    #rightmiddle{display: none;}
 }
