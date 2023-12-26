@@ -605,7 +605,7 @@ input {
     }
 }
 
-@media screen and (width<=980px)
+@media screen and (width<=1100px)
 {
     #slogon2{
         font-size: 50px;
@@ -613,5 +613,8 @@ input {
     .main{
         width: 700px;
         height: 900px;
+    }
+    #slogon1{
+        font-size:70px;
     }
 }
