@@ -301,16 +301,14 @@ button:hover {
     margin-right: 300px;
     top: 30%;
     animation: fadeIn 1s;
+    margin-top: 200px;
+    
 }
 
 .portfolios .portfolio-item {
     position: relative;
     border-radius: 15px;
 
-}
-
-.forMargin {
-    margin-top: 500px;
 }
 
 .portfolios .portfolio-item img {
@@ -342,39 +340,6 @@ button:hover {
     font-size: 3rem;
     color: var(--color-white);
     margin-bottom: 1.5rem;
-}
-
-.portfolios .portfolio-item .hover-items .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon {
-    background-color: var(--color-primary);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 1rem;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon i {
-    font-size: 1.5rem;
-    color: var(--color-white);
-    margin: 0 1rem;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon:hover {
-    background-color: var(--color-white);
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon:hover i {
-    color: var(--color-primary);
 }
 
 .portfolio-item:hover .hover-items {
@@ -593,11 +558,37 @@ input {
         margin: auto;
         left: 0px;
     }
+    .portfolios .portfolio-item img {
+
+        width: 100%;
+        height: 100%;
+    }
+    .portfolios .portfolio-item .hover-items{
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 @media screen and (width<=1980px) {
     #rightmiddle {
         display: none;
+    }
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    portfolios .portfolio-item .hover-items h3{
+        font-size: 2rem;
+    }
+    #slogon1 {
+       font-size:80px;
+        width: 600px;
+        padding: 30px;
+        margin: auto;
+        text-align: center;
+        cursor: pointer;
     }
 }
 
@@ -618,5 +609,7 @@ input {
         margin-left: 100px;
         margin-right: 100px;
     }
+    
+  
 
 }
